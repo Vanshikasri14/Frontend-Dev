@@ -1,0 +1,12 @@
+/* 2-height-width.css */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:28px;background:#f7fafc;color:#111}
+.center{min-height:80vh;display:flex;align-items:center;justify-content:center}
+.container{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap}
+.box{padding:12px;border-radius:8px;color:#fff;overflow:auto}
+.px{width:200px;height:120px;background:#2b6cb0;min-height:100px}
+.pct{width:50%;min-height:20vh;max-width:420px;background:#dd6b20}
+.em{width:12em;height:15vh;background:#2f855a;min-height:80px;max-width:260px;overflow:auto}
+/* Show overflow example content size */
+.em::after{content:"\A This box uses overflow:auto — add more text to see scrolling.";white-space:pre}
+footer{margin-top:18px;text-align:center;color:#333}

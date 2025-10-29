@@ -1,0 +1,13 @@
+/* 7-typography.css */
+body{font-family: Georgia, "Times New Roman", serif;padding:28px;line-height:1.6;color:#111}
+h1{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:2.2rem;margin-bottom:8px}
+p{font-size:1rem}
+.lead{font-size:1.1rem;line-height:1.9;letter-spacing:.03em}
+mark{background:#fff176;padding:.1em .2em;border-radius:4px}
+strong{font-weight:700;color:#2b6cb0}
+em{font-style:italic;color:#2f855a}
+p .letter{letter-spacing:.12em}
+article p::first-line{font-variation-settings:"wght" 650;font-weight:600}
+article p::first-letter{font-size:2.2rem;float:left;margin-right:.08em;color:#dd6b20}
+.special{background:#f0f4c3;padding:2px 6px;border-radius:4px}
+.special2{background:#e3f2fd;padding:2px 6px;border-radius:4px}

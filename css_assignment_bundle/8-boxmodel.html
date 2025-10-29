@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>8 - Box Model</title>
+<link rel="stylesheet" href="8-boxmodel.css"/>
+</head>
+<body>
+  <main class="center">
+    <section class="demo">
+      <div class="outer">
+        <div class="border">
+          <div class="padding">
+            <div class="content">Content area<br><small>content</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="explain">
+        <p><strong>Content:</strong> the innermost box.</p>
+        <p><strong>Padding:</strong> space inside border.</p>
+        <p><strong>Border:</strong> line around padding and content.</p>
+        <p><strong>Margin:</strong> outside spacing (see outer spacing).</p>
+      </div>
+    </section>
+    <section class="compare">
+      <div class="box default">Default box-sizing</div>
+      <div class="box bb">box-sizing:border-box</div>
+    </section>
+  </main>
+</body>
+</html>
