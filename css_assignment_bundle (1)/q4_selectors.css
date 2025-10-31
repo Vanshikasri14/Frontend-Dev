@@ -1,0 +1,55 @@
+/* q4_selectors.css
+   Shows element, class, ID, attribute and combinator selectors with comments.
+*/
+
+/* Element selector: styles all <p> elements */
+p {
+  color:#222;
+  line-height:1.5;
+}
+
+/* Class selector: .highlight */
+.highlight {
+  background:#fff8d6;
+  padding:6px 8px;
+  border-left:4px solid #f6c344;
+}
+
+/* ID selector: #unique */
+#unique {
+  font-weight:600;
+  color:#0b76d1;
+}
+
+/* Attribute selector: selects elements with data-role="example" */
+a[data-role="example"] {
+  text-decoration:none;
+  padding:6px 8px;
+  background:#eef6ff;
+  border-radius:6px;
+}
+
+/* Combinators examples */
+/* Direct child selector: .parent > p */
+.parent > p {
+  margin:8px 0;
+  font-style:italic;
+}
+
+/* Adjacent sibling selector: element + span (selects span immediately after an element) */
+.parent p + span {
+  display:block;
+  margin-top:6px;
+  color:#666;
+}
+
+/* General sibling selector: ~ selects later siblings */
+.twin {
+  margin-top:10px;
+  color:#444;
+}
+
+/* basic layout spacing */
+body{font-family:system-ui,Arial;margin:0;padding:1rem;}
+main{max-width:900px;margin:0 auto;}
+header,footer{padding:0.5rem 0;color:#555;}

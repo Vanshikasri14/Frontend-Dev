@@ -1,0 +1,56 @@
+/* q2_tooltips.css
+   Pure CSS tooltips with fade-in (transition) and absolute positioning.
+*/
+
+body, html {height:100%; margin:0; font-family: system-ui, Arial;}
+
+.center {
+  min-height:100vh;
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg,#f7f9fc,#eef3ff);
+}
+
+/* wrapper positioned relative so absolute tooltip can place above */
+.tooltip-wrap {
+  position: relative;
+  display:inline-block;
+}
+
+/* the hover target */
+.tip-target {
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:6px;
+  background:#fff;
+  box-shadow:0 6px 12px rgba(0,0,0,0.08);
+  cursor:default;
+}
+
+/* tooltip hidden by default */
+.tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  bottom: calc(100% + 8px);
+  white-space: nowrap;
+  padding: 8px 10px;
+  border-radius:6px;
+  background:#222;
+  color:#fff;
+  font-size:0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* fade in and move up on hover */
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus-within .tooltip {
+  opacity:1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events:auto;
+}

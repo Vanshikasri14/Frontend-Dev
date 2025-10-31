@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4 - Selectors Practice</title>
+<link rel="stylesheet" href="q4_selectors.css">
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main>
+    <section>
+      <h2>Element selector</h2>
+      <p>This paragraph is styled by the element selector (p).</p>
+    </section>
+
+    <section>
+      <h2>Class and ID selectors</h2>
+      <p class="highlight">A paragraph styled by a class.</p>
+      <p id="unique">A paragraph styled by an ID.</p>
+    </section>
+
+    <section>
+      <h2>Attribute selector</h2>
+      <a href="#" data-role="example">Link with [data-role]</a>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child &gt; selector</p>
+        <span>Adjacent sibling + selector</span>
+        <p class="twin">Another paragraph ~ general sibling</p>
+      </div>
+    </section>
+  </main>
+  <footer>Footer content — demonstrates semantic structure.</footer>
+</body>
+</html>

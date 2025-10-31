@@ -1,0 +1,51 @@
+/* q6_animations.css
+   Demonstrates @keyframes, delays, iteration-count and animation-direction
+*/
+
+body,html{height:100%;margin:0;font-family:system-ui,Arial;}
+.stage{
+  min-height:100vh;
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg,#fff,#eef2ff);
+}
+
+/* moving box left-right */
+.box{
+  width:80px;height:80px;background:#6ee7b7;border-radius:8px;
+  animation: slide 2s ease-in-out infinite alternate;
+}
+
+/* bouncing ball */
+.ball{
+  width:56px;height:56px;border-radius:50%;background:#f59e0b;
+  animation: bounce 1.2s cubic-bezier(.28,.84,.42,1) infinite;
+  animation-delay:0.2s;
+}
+
+/* color changing text */
+.color-text{
+  animation: hue 3s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+/* keyframes */
+@keyframes slide {
+  from { transform: translateX(-30px); }
+  to   { transform: translateX(30px); }
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(-80px); }
+  60%  { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes hue {
+  0%   { color:#111827; }
+  50%  { color:#7c3aed; }
+  100% { color:#059669; }
+}

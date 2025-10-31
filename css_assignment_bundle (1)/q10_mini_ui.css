@@ -1,0 +1,33 @@
+/* q10_mini_ui.css
+   Compact page with header, card, form and footer. Responsive and uses Flexbox.
+*/
+:root{--card-bg:#fff;}
+body{margin:0;font-family:system-ui,Arial;background:linear-gradient(180deg,#eef2ff,#fff);color:#111;}
+.topbar{padding:0.8rem 1rem;background:transparent;}
+.center{display:flex;justify-content:center;align-items:center;min-height:70vh;padding:1rem;}
+.card{
+  width: min(720px,95%);
+  background:var(--card-bg);
+  padding:1.2rem;
+  border-radius:12px;
+  box-shadow:0 16px 40px rgba(12,20,40,0.06);
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between;
+}
+.form{flex:1;display:flex;flex-direction:column;gap:0.6rem;}
+.form label{display:flex;flex-direction:column;font-size:0.9rem;}
+.form input{padding:8px;border-radius:8px;border:1px solid #dbeafe;}
+.form input:focus{outline:none;box-shadow:0 0 0 4px rgba(59,130,246,0.08);}
+.row{display:flex;gap:0.6rem;margin-top:0.6rem;}
+.primary{background:#2563eb;color:#fff;padding:10px 12px;border-radius:8px;border:none;}
+.ghost{background:transparent;border:1px solid #cbd5e1;padding:10px;border-radius:8px;}
+.avatar{width:110px;height:110px;border-radius:10px;background:linear-gradient(135deg,#fbc2eb,#a18cd1);}
+
+/* responsive */
+@media (max-width:700px){
+  .card{flex-direction:column;align-items:stretch;}
+  .avatar{width:100%;height:160px;}
+}
+.footer, .foot{padding:0.6rem;text-align:center;color:#64748b;}

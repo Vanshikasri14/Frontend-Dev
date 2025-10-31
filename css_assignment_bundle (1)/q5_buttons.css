@@ -1,0 +1,62 @@
+/* q5_buttons.css
+   Multiple button styles with hover, active, focus, and disabled states.
+*/
+
+body{font-family:system-ui,Arial;padding:1.2rem;background:#f5f7fb;}
+.btn-row{display:flex;gap:1rem;align-items:center;}
+
+/* base button */
+.btn{
+  padding:10px 14px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 0 8px 18px rgba(14,30,60,0.06);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+/* primary */
+.primary{
+  background: linear-gradient(180deg,#5b8cff,#3667f0);
+  color:white;
+}
+
+/* secondary */
+.secondary{
+  background:#eef2ff;
+  border:1px solid #c9d8ff;
+  color:#254aa5;
+}
+
+/* outline */
+.outline{
+  background:transparent;
+  border:2px solid #64748b;
+  color:#1f2937;
+}
+
+/* hover: grow slightly */
+.btn:hover:not(:disabled){
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(14,30,60,0.09);
+}
+
+/* active: press down */
+.btn:active:not(:disabled){
+  transform: translateY(1px) scale(0.99);
+}
+
+/* focus ring */
+.btn:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(88,120,255,0.12);
+}
+
+/* disabled */
+.btn:disabled,
+.btn[disabled]{
+  opacity:0.5;
+  cursor:not-allowed;
+  transform:none;
+  box-shadow:none;
+}

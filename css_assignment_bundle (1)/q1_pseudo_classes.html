@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>1 - Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="q1_pseudo_classes.css">
+</head>
+<body>
+  <header><h1>Pseudo-Classes (:hover, :focus, :active, :nth-child)</h1></header>
+  <main class="row">
+    <section class="example">
+      <a href="#" class="demo-link">Link: :hover</a>
+      <p class="explain">:hover — changes color when pointer is over the element.</p>
+    </section>
+
+    <section class="example">
+      <button class="demo-btn">Button: :active</button>
+      <p class="explain">:active — style while the element is being pressed.</p>
+    </section>
+
+    <section class="example">
+      <input class="demo-input" placeholder="Focus me (tab/click)">
+      <p class="explain">:focus — visible when element receives keyboard or mouse focus.</p>
+    </section>
+
+    <section class="example">
+      <ul class="demo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      <p class="explain">:nth-child() — styles selected list items (every even item).</p>
+    </section>
+  </main>
+  <footer>Use Tab to test focus, click/hold to test active.</footer>
+</body>
+</html>

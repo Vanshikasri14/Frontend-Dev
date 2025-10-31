@@ -1,0 +1,18 @@
+/* q8_box_sizing.css
+   Two boxes side-by-side to highlight difference between default and border-box.
+*/
+body{margin:0;font-family:system-ui,Arial;background:#f7f9fc;padding:2rem;}
+.center{display:flex;gap:2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap;}
+.box{width:200px;padding:20px;border:10px solid #cbd5e1;border-radius:8px;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,0.04)}
+.default{ /* default content-box */
+  box-sizing: content-box;
+}
+.border-box{
+  box-sizing: border-box;
+  background:#f0fdf4;border-color:#bbf7d0;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width:600px){
+  .center{flex-direction:column;align-items:center;}
+}
